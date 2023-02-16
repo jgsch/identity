@@ -32,4 +32,4 @@ class IdentityWorker(Worker):  # pragma: no cover
         return data
 
     def forward(self, data):
-        return ""
+        return [""] * len(data)
